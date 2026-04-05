@@ -46,3 +46,15 @@ def load_datasets():
     wine_analyzer = DataAnalyzer("Wine", wine.data, wine.feature_names)
 
     return iris_analyzer, wine_analyzer
+
+def compare_datasets(analyzer1, analyzer2):
+    stats1 = analyzer1.compute_summary_stats()
+    stats2 = analyzer2.compute_summary_stats()
+
+    print("Comparison of Numerical Attributes:")
+    print("=" * 50)
+    for attr in set(analyzer1.numerical_attributes) & set(analyzer2.numerical_attributes):
+        mean1 = stats1[attr]['mean']
+        mean2 = stats2[attr]['mean']
+        diff = abs(mean1 - mean2)
+        print(f"{attr}: Iris mean = {mean1:.4f}, Wine mean = {mean2:.4f}, Difference = {diff:.4f}")
