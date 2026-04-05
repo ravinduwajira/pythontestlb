@@ -90,3 +90,6 @@ def main():
     print("Iris dataset focuses on physical measurements in centimeters, while Wine dataset deals with chemical concentrations.")
     print("The standard deviations indicate variability in measurements, with Wine dataset showing higher variability in some attributes.")
     print("This comparison highlights how statistical analysis can be applied across different domains to understand data characteristics.")
+
+if __name__ == "__main__":
+    main()
