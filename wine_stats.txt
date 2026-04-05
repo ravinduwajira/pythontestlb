@@ -1,0 +1,106 @@
+Summary Statistics for Wine
+==================================================
+
+alcohol:
+  mean: 13.0006
+  min: 11.0300
+  max: 14.8300
+  std: 0.8118
+  median: 13.0500
+  count: 178.0000
+
+malic_acid:
+  mean: 2.3363
+  min: 0.7400
+  max: 5.8000
+  std: 1.1171
+  median: 1.8650
+  count: 178.0000
+
+ash:
+  mean: 2.3665
+  min: 1.3600
+  max: 3.2300
+  std: 0.2743
+  median: 2.3600
+  count: 178.0000
+
+alcalinity_of_ash:
+  mean: 19.4949
+  min: 10.6000
+  max: 30.0000
+  std: 3.3396
+  median: 19.5000
+  count: 178.0000
+
+magnesium:
+  mean: 99.7416
+  min: 70.0000
+  max: 162.0000
+  std: 14.2825
+  median: 98.0000
+  count: 178.0000
+
+total_phenols:
+  mean: 2.2951
+  min: 0.9800
+  max: 3.8800
+  std: 0.6259
+  median: 2.3550
+  count: 178.0000
+
+flavanoids:
+  mean: 2.0293
+  min: 0.3400
+  max: 5.0800
+  std: 0.9989
+  median: 2.1350
+  count: 178.0000
+
+nonflavanoid_phenols:
+  mean: 0.3619
+  min: 0.1300
+  max: 0.6600
+  std: 0.1245
+  median: 0.3400
+  count: 178.0000
+
+proanthocyanins:
+  mean: 1.5909
+  min: 0.4100
+  max: 3.5800
+  std: 0.5724
+  median: 1.5550
+  count: 178.0000
+
+color_intensity:
+  mean: 5.0581
+  min: 1.2800
+  max: 13.0000
+  std: 2.3183
+  median: 4.6900
+  count: 178.0000
+
+hue:
+  mean: 0.9574
+  min: 0.4800
+  max: 1.7100
+  std: 0.2286
+  median: 0.9650
+  count: 178.0000
+
+od280/od315_of_diluted_wines:
+  mean: 2.6117
+  min: 1.2700
+  max: 4.0000
+  std: 0.7100
+  median: 2.7800
+  count: 178.0000
+
+proline:
+  mean: 746.8933
+  min: 278.0000
+  max: 1680.0000
+  std: 314.9075
+  median: 673.5000
+  count: 178.0000
