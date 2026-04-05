@@ -71,3 +71,9 @@ def main():
     print("Iris Statistics:")
     for attr, stat in iris_stats.items():
         print(f"{attr}: Mean={stat['mean']:.4f}, Min={stat['min']:.4f}, Max={stat['max']:.4f}, Std={stat['std']:.4f}")
+
+    print("\nComputing summary statistics for Wine dataset...")
+    wine_stats = wine_analyzer.compute_summary_stats()
+    print("Wine Statistics:")
+    for attr, stat in wine_stats.items():
+        print(f"{attr}: Mean={stat['mean']:.4f}, Min={stat['min']:.4f}, Max={stat['max']:.4f}, Std={stat['std']:.4f}")
