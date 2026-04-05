@@ -60,4 +60,5 @@ def compare_datasets(analyzer1, analyzer2):
         print(f"{attr}: Iris mean = {mean1:.4f}, Wine mean = {mean2:.4f}, Difference = {diff:.4f}")
 
 def main():
-    pass
+    print("Loading datasets...")
+    iris_analyzer, wine_analyzer = load_datasets()
