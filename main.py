@@ -77,3 +77,7 @@ def main():
     print("Wine Statistics:")
     for attr, stat in wine_stats.items():
         print(f"{attr}: Mean={stat['mean']:.4f}, Min={stat['min']:.4f}, Max={stat['max']:.4f}, Std={stat['std']:.4f}")
+
+    # Save stats to files
+    iris_analyzer.save_stats_to_file("iris_stats.txt")
+    wine_analyzer.save_stats_to_file("wine_stats.txt")
