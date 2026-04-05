@@ -84,3 +84,9 @@ def main():
 
     print("\nComparing datasets...")
     compare_datasets(iris_analyzer, wine_analyzer)
+
+    print("\nConclusion:")
+    print("The analysis reveals that both datasets contain numerical attributes with different scales and distributions.")
+    print("Iris dataset focuses on physical measurements in centimeters, while Wine dataset deals with chemical concentrations.")
+    print("The standard deviations indicate variability in measurements, with Wine dataset showing higher variability in some attributes.")
+    print("This comparison highlights how statistical analysis can be applied across different domains to understand data characteristics.")
