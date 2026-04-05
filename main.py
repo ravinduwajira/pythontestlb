@@ -62,3 +62,6 @@ def compare_datasets(analyzer1, analyzer2):
 def main():
     print("Loading datasets...")
     iris_analyzer, wine_analyzer = load_datasets()
+
+    print(f"\nIris Dataset - Numerical Attributes: {iris_analyzer.numerical_attributes}")
+    print(f"Wine Dataset - Numerical Attributes: {wine_analyzer.numerical_attributes}")
