@@ -58,3 +58,6 @@ def compare_datasets(analyzer1, analyzer2):
         mean2 = stats2[attr]['mean']
         diff = abs(mean1 - mean2)
         print(f"{attr}: Iris mean = {mean1:.4f}, Wine mean = {mean2:.4f}, Difference = {diff:.4f}")
+
+def main():
+    pass
