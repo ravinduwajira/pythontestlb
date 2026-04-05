@@ -65,3 +65,9 @@ def main():
 
     print(f"\nIris Dataset - Numerical Attributes: {iris_analyzer.numerical_attributes}")
     print(f"Wine Dataset - Numerical Attributes: {wine_analyzer.numerical_attributes}")
+
+    print("\nComputing summary statistics for Iris dataset...")
+    iris_stats = iris_analyzer.compute_summary_stats()
+    print("Iris Statistics:")
+    for attr, stat in iris_stats.items():
+        print(f"{attr}: Mean={stat['mean']:.4f}, Min={stat['min']:.4f}, Max={stat['max']:.4f}, Std={stat['std']:.4f}")
