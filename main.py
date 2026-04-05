@@ -11,3 +11,17 @@ class DataAnalyzer:
         self.dataset_name = dataset_name
         self.data = pd.DataFrame(data, columns=feature_names)
         self.numerical_attributes = feature_names
+
+    def compute_summary_stats(self):
+        stats = {}
+        for attr in self.numerical_attributes:
+            values = self.data[attr]
+            stats[attr] = {
+                'mean': values.mean(),
+                'min': values.min(),
+                'max': values.max(),
+                'std': values.std(),
+                'median': values.median(),
+                'count': len(values)
+            }
+        return stats
