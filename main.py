@@ -81,3 +81,6 @@ def main():
     # Save stats to files
     iris_analyzer.save_stats_to_file("iris_stats.txt")
     wine_analyzer.save_stats_to_file("wine_stats.txt")
+
+    print("\nComparing datasets...")
+    compare_datasets(iris_analyzer, wine_analyzer)
