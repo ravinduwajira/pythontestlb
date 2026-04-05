@@ -35,3 +35,14 @@ class DataAnalyzer:
                 f.write(f"\n{attr}:\n")
                 for key, value in stat.items():
                     f.write(f"  {key}: {value:.4f}\n")
+
+def load_datasets():
+    # Load Iris dataset
+    iris = load_iris()
+    iris_analyzer = DataAnalyzer("Iris", iris.data, iris.feature_names)
+
+    # Load Wine dataset
+    wine = load_wine()
+    wine_analyzer = DataAnalyzer("Wine", wine.data, wine.feature_names)
+
+    return iris_analyzer, wine_analyzer
