@@ -7,4 +7,7 @@ import numpy as np
 from sklearn.datasets import load_iris, load_wine
 
 class DataAnalyzer:
-    pass
+    def __init__(self, dataset_name, data, feature_names):
+        self.dataset_name = dataset_name
+        self.data = pd.DataFrame(data, columns=feature_names)
+        self.numerical_attributes = feature_names
